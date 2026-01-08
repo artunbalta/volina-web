@@ -8,7 +8,7 @@ const teamMembers = [
   {
     name: "Ömer Burak Avcıoğlu",
     role: "Co-Founder",
-    specialty: "Product",
+    specialty: "Engineering",
     image: "/team/omer.jpg",
     initials: "OA",
     color: "#0055FF",
@@ -19,7 +19,7 @@ const teamMembers = [
   {
     name: "Fatih Aydın",
     role: "Co-Founder",
-    specialty: "Engineering",
+    specialty: "Product",
     image: "/team/fatih.jpg",
     initials: "FA",
     color: "#10B981",
