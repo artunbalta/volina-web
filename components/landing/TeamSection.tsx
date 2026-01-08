@@ -6,35 +6,46 @@ import { Linkedin, Twitter } from "lucide-react";
 
 const teamMembers = [
   {
-    name: "Sarah Chen",
-    role: "Chief Product Officer",
-    specialty: "Product Strategy",
-    image: "/team/sarah.jpg",
-    initials: "SC",
+    name: "Ömer Burak Avcıoğlu",
+    role: "Co-Founder",
+    specialty: "Product",
+    image: "/team/omer.jpg",
+    initials: "OA",
     color: "#0055FF",
-    bio: "15+ years in product development, passionate about AI and customer experience.",
+    bio: "",
     linkedin: "#",
     twitter: "#",
   },
   {
-    name: "Michael Torres",
-    role: "AI Research Lead",
-    specialty: "Machine Learning",
-    image: "/team/michael.jpg",
-    initials: "MT",
+    name: "Fatih Aydın",
+    role: "Co-Founder",
+    specialty: "Engineering",
+    image: "/team/fatih.jpg",
+    initials: "FA",
     color: "#10B981",
-    bio: "Former Google AI researcher, specialist in conversational AI.",
+    bio: "",
     linkedin: "#",
     twitter: "#",
   },
   {
-    name: "Emily Watson",
-    role: "Product Director",
-    specialty: "Enterprise Solutions",
-    image: "/team/emily.jpg",
-    initials: "EW",
+    name: "Artun Balta",
+    role: "Co-Founder",
+    specialty: "Development",
+    image: "/team/artun.jpg",
+    initials: "AB",
     color: "#F59E0B",
-    bio: "Built customer experience systems for 10+ enterprise networks.",
+    bio: "",
+    linkedin: "#",
+    twitter: "#",
+  },
+  {
+    name: "Berke Pekşen",
+    role: "Co-Founder",
+    specialty: "Design",
+    image: "/team/berke.jpg",
+    initials: "BP",
+    color: "#8B5CF6",
+    bio: "",
     linkedin: "#",
     twitter: "#",
   },
@@ -49,14 +60,10 @@ export function TeamSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Meet the Team
           </h2>
-          <p className="text-lg text-white/60">
-            Industry experts and AI specialists working together to transform
-            customer communication.
-          </p>
         </div>
 
         {/* Team grid */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (
             <Card 
               key={member.name} 
@@ -98,12 +105,14 @@ export function TeamSection() {
                   <h3 className="text-xl font-semibold text-white mb-1">
                     {member.name}
                   </h3>
-                  <p className="text-sm text-blue-400 font-medium mb-3">
+                  <p className="text-sm text-blue-400 font-medium mb-4">
                     {member.role}
                   </p>
-                  <p className="text-sm text-white/60 mb-4">
-                    {member.bio}
-                  </p>
+                  {member.bio && (
+                    <p className="text-sm text-white/60 mb-4">
+                      {member.bio}
+                    </p>
+                  )}
 
                   {/* Social links */}
                   <div className="flex justify-center gap-3">
