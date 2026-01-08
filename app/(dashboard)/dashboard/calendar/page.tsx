@@ -187,7 +187,7 @@ export default function CalendarPage() {
     name: "",
     email: "",
     phone: "",
-    assignee: mockDoctors[0].id,
+    assignee: mockDoctors.length > 0 ? mockDoctors[0].id : "",
     time: "09:00",
     notes: "",
   });
@@ -302,7 +302,7 @@ export default function CalendarPage() {
         name: "",
         email: "",
         phone: "",
-        assignee: mockDoctors[0].id,
+        assignee: mockDoctors.length > 0 ? mockDoctors[0].id : "",
         time: "09:00",
         notes: "",
       });
